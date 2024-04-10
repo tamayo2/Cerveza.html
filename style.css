@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: #141414;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.bee {
+    padding: 150 px 30px;
+}
+
+.swiper-slide {
+    font-size: 18px;
+    background-color: #121418;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper-button-prev::after {
+    font-size: 25px;
+}
+
+.swiper-button-next::after {
+    font-size: 25px;
+}
+
+.swiper-button-next {
+    color: #edb40c;
+}
+
+.swiper-button-prev {
+    color: #edb40c;
+}
+
+.swiper-pagination-bullet {
+    background-color: #747474;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #edb40c;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.menu .logo img {
+    width: 30px;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #a1a1a1;
+    display: block;
+}
+
+.menu .navbar ul li a:hover {
+    color: #ffffff;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-content {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.slider {
+    width: 1100px;
+}
+
+.enlace {
+    display: inline-block;
+    color: #edb40c;
+    margin-top: 15px;
+}
+
+.product img {
+    height: 250px;
+}
+
+.product-txt {
+    margin-top: 25px;
+}
+
+.product-txt h4 {
+    color: #edb40c;
+    font-size: 20px;
+    margin: 0;
+}
+
+.product-txt p{
+    color: #a1a1a1;
+    font-size: 16px;
+    margin: 0;
+}
+
+.price {
+    color: #edb40c;
+}
+
+.nosotros {
+    padding: 80px 0px;
+    background-image: linear-gradient(rgb(20,20,20,1), rgba(20,20,20,0.9)), url(images/seccion.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nosotros-txt h2 {
+    color: #edb312;
+    font-size: 80px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 100px;
+}
+
+.nosotros-txt p {
+    color: #ffffff;
+    font-size: 80px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 100px;
+}
+
+.nosotros-txt span {
+    color: #edb312;
+    font-size: 80px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 100px;
+}
+
+.info {
+    text-align: right;
+}
+
+hr {
+    border: 1px solid #edb3129a;
+}
+
+.footer-txt {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-txt img {
+    width: 50px;
+}
+
+.links {
+    padding: 50px 0px;
+    text-align: center;
+}
+
+.links ul {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+}
+
+.links p {
+    color: #a1a1a1;
+    margin-top: 25px;
+}
+
+.links ul li a {
+    color: #a1a1a1;
+}
+
+.socials {
+    margin-top: 30px;
+}
+
+.socials img {
+    width: 25px;
+    margin: 0 15px;
+}
+
+@media(max-width:991px) {
+    .menu {
+        padding: 20px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #181818;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    .menu .navbar ul li a {
+        color: #ffffff;
+    }
+
+    .menu .navbar ul li a:hover {
+        color: #bebebe;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    .header-content {
+        padding: 30px;
+        margin-top: 70px;
+    }
+
+    .slider {
+        width: 420px;
+    }
+
+    .enlace {
+        font-size: 14px;
+        margin-top: 25px;
+    }
+
+    .bee {
+        padding: 50px 30px;
+    }
+
+    .product {
+        text-align: center;
+    }
+
+    .nosotros {
+        padding: 30px;
+    }
+
+    .nosotros-txt h2 {
+        font-size: 50px;
+        line-height: 70px;
+    }
+
+    .nosotros-txt p {
+        font-size: 50px;
+        line-height: 70px;
+    }
+
+    .nosotros-txt span {
+        font-size: 50px;
+        line-height: 70px; 
+    }
+
+    .footer {
+        padding: 30px;
+    }
+
+    .links {
+        padding: 20px 0px;
+    }
+
+    .links ul {
+        flex-direction: column;
+        width: 200px;
+    }
+
+    .links ul li a {
+        display: block;
+        margin-bottom: 15px;
+    }
+
+
+}
